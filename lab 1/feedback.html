@@ -8,40 +8,45 @@
 </head>
 
 <body>
-    <header>
-        <p><a align="right" href="Cyberpunk 2077.html">About me</a></p>
-    </header>
+<header>
+    <p><a href="Cyberpunk 2077.html">Back</a></p>
+</header>
 
-    <main>
-        <div>
-            <form action="">
-                <fieldset>
-                    <legend>Зворотній зв'язок</legend>
-                    <div class="phone">
-                        <br><br><label for="phone">Номер телефону: <br></label> <input type="tel" placeholder="+380..." name="tel"><br><br>
-                        <label for="name1">Як до вас звертатись? <br></label><input type="text" placeholder="Elon Musk">
-                    </div>
-                    <div class="category">
-                        <br><br><label for="cat">Категорія: <br><br></label><input type="radio" name="cat">  &nbsp;Підтримка <input type="radio" name="cat">Побажання
-                        <br><input type="radio" name="cat"> &nbsp;Скарга&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="cat">Тощо
-                        <br><br><center><label for="file">Файл за потреби: <br></label><input type="file" name="file" accept="image/*"></center><hr><br>
-                        <center> <label for="rules">Чи згодні ви з усіма <a href="empty.page.html"target="_blank">умовами обробки інформації</a>?</label><input type="checkbox" name="rules" id="rules"></center>   
-                        <br><hr><br>
+<main>
+<form>
+<fieldset>
+    <legend>Зворотній зв'язок</legend>
+
+    <label for="phone">Ваш номер телефону:</label><br>
+    <input id="phone" type="text" placeholder="+380..." name="tel"><br>
+
+    <label for="name">Як до вас звертатись?</label><br>
+    <input id="name" type="text" placeholder="Elon Musk"><br><br>
+
+    <label for="category">Категорія:</label><br>
+    <input id="category" type="radio">Підтримка<br>
+    <input id="category" type="radio">Побажання<br>
+    <input id="category" type="radio">Скарга<br>
+    <input id="category" type="radio">Інше<br><br>
+
+    <label for="file">Файл за потреби: </label><br>
+    <input id="file" type="file"><br><br>
                    
-                    </div>
-                    <div class="feedback1">
-                       <br> <br><label for="feedback1">Зв'язатись з вами: <br><br></label><input type="radio" name="soc">Viber <br> <input type="radio" name="soc">Telegram
-                    </div>
-                    <div class="yourtext">
-                       <br><br> <label for="tema">Тема повідомлення:&nbsp;&nbsp;</label> <input type="text" placeholder="Можна залишити пустим*">
-                        <br><br><label for="yourtext1">Ваше повідомлення: <br><br></label>
-                        <textarea name="yourtext" id="yourtext" cols="100" rows="10" placeholder="Мінімум: 50 символів"></textarea>
-                        <center><button>Відправити!</button></center> 
-                    </div>
-                    <br><br>
-                </fieldset>
-            </form>
-        </div>
-    </main>
+    <label for="messanger">Зв'язатись з вами:</label><br>
+    <input id="messanger" type="radio">SMS<br> 
+    <input id="messanger" type="radio">Viber<br> 
+    <input id="messanger" type="radio">Telegram<br><br>
+
+    <label for="theme">Тема повідомлення:</label>
+    <input id="theme" type="text" placeholder="Можна бути пустим"><br><br>
+
+    <label for="message">Ваше повідомлення:</label><br><br>
+    <textarea id="message" cols="100" rows="10" placeholder="Мінімум: 50 символів"></textarea><br>
+
+    <button>Відправити!</button>
+</fieldset>
+</form>
+</main>
 
 </body>
+</html>
