@@ -34,6 +34,13 @@ p{
     padding-left: 1em;
 }
 
+marquee
+{
+    text-shadow: 2px 2px 2px yellow;
+    font-size: 75px;
+    font-family: 'Red Hat Mono', monospace;
+}
+
 #content-3{
     width: 20%;
     margin: 1em auto;
