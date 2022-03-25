@@ -34,7 +34,7 @@ p{
     padding-left: 1em;
 }
 
-marquee
+.warning
 {
     text-shadow: 2px 2px 2px yellow;
     font-size: 75px;
