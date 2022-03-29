@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+
+*{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 3px;
+}
+
+body
+{
+    background: rgb(39, 39, 39);
+    padding: 1em;
+}
+
+header, footer
+{
+    text-shadow: 5px 5px 5px black;
+    padding: 5px;
+}
+
+h1
+{
+    text-shadow: 2px 2px 2px yellow;
+}
+
+h2
+{   
+    margin-left: 1px;
+    margin-top: 1px;
+    text-align: center;
+}
+
+a
+{
+    border-bottom: dotted 2px yellow;
+    padding: 1px;
+    text-decoration: none;
+}
+
+p
+{
+    padding-left: 1em;
+}
+
+.warning
+{
+    text-shadow: 2px 2px 2px yellow;
+    font-size: 75px;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+#content-3{
+    width: 20%;
+    margin: 3em;
+}
+
+td:nth-child(even)
+{
+    float: right;
+}
+
+table caption
+{
+    margin: 0 0 1em 2em;
+}
+
+input
+{
+    border: 0;
+    padding: 0.5em 1em;
+    border-radius: 99vw;
+    margin: 2px;
+}
+
+.form
+{
+    width: 65%;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+label{
+    font-size: 1.05em;
+    margin: 0.5em;
+}
+
+label:hover
+{
+    cursor: pointer;
+}
+
+input
+{
+    margin-bottom: 1em;
+}
+
+button
+{
+    margin: 1em 6em;
+    min-height: 3em;
+    min-width: 8em;
+    color: black;
+    background: yellow;
+    border: 0;
+    border-radius: 99vw;
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 900;
+    transition: all 0.375s;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: grey;
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+input[type="file"]
+{
+    display: none;
+}
+
+hr
+{
+    border-color: yellow;
+    padding: 0;
+}
+
+fieldset
+{
+    border-color: yellow;
+}
+
+.ph
+{
+    padding: 0.5em 1em;
+    background: yellow;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.conditions
+{
+    background: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2019%2F10%2Fmark-zuckerberg-1-2000.jpg);
+}
+
+.flex-wrapper-header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-wrapper-1
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+.flex-wrapper-2
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrapper-3
+{
+    display: flex;
+    justify-content: space-evenly;
+}
