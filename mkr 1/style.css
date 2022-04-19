@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*
+{
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    background: rgb(255, 255, 255);
+    padding: 1em;
+    min-width: 400px;
+    animation-name: bg-color-change;
+    animation-duration: 5s;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    background-color:rgb(200, 200, 200);
+  }
+
+@keyframes bg-color-change
+{
+    from {background-color: rgb(40, 40, 40);}
+    to {background-color: rgb(255, 255, 255);}
+}
