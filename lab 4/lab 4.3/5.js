@@ -14,11 +14,13 @@ let mood = [
     }
 ]
 
-document.getElementById("show").onclick = () =>
+document.getElementById("mood").onchange = () =>
 {
     let numberMood = document.getElementById("mood").value
-    document.getElementById("img").innerHTML = `
+    document.getElementById("img").innerHTML = 
+    `
     <p>${mood[numberMood-1].mood}</p>
-    <img src="${mood[numberMood-1].url}">`
+    <img src="${mood[numberMood-1].url}">
+    `
 }
 

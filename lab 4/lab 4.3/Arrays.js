@@ -66,18 +66,26 @@ alert(prises)
 
 
 let prise = 0
-for (let i = 1; i <= 10; i++) {
+while (true) {
     let answear = prompt("type number or 'stop' ", "")
     if (answear == 'stop')
     {
         break
     }
-    else
-    {
-        used.push(answear)
-        prise += prises[parseInt(answear)-1]
-        alert(prise)
-        alert(used)
+    else   
+    {   
+        if (used.includes(answear))
+        {   
+            alert("the number was already used, try smth else")
+            continue
+        }
+        else
+        {
+            used.push(answear)
+            prise += prises[parseInt(answear)-1]
+            alert(prise)
+            alert(used)
+        }
     }
 }
 
