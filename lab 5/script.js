@@ -37,7 +37,9 @@ class AllAbonents {
   }
 
   delete(someId) {
-    this.abonents.splice(someId, 1);
+    let index = this.abonents.findIndex((elem) => elem.id == someId);
+    if (index == -1) throw "Not found";
+    this.abonents.splice(index, 1);
   }
 
   edit(someId, newObj) {
