@@ -1,6 +1,6 @@
 function OpenSearch() {
   menu.style.width = "300px";
-  document.getElementById("btn-box").style.filter = "brightness(0.8)";
+  btns.style.filter = "brightness(0.8)";
   document.getElementById("text").textContent = "Whoa! You found me";
   document.body.style.backgroundColor = "rgb(36, 30, 71)";
   menu.addEventListener("transitionend", AllowClick);
@@ -8,7 +8,7 @@ function OpenSearch() {
 
 function OpenRun() {
   menu.style.width = "300px";
-  document.getElementById("btn-box").style.filter = "brightness(0.8)";
+  btns.style.filter = "brightness(0.8)";
   document.getElementById("text").textContent = "Please, don't run!";
   document.body.style.backgroundColor = "rgb(36, 30, 71)";
   menu.addEventListener("transitionend", AllowClick);
@@ -16,16 +16,17 @@ function OpenRun() {
 
 function Close() {
   menu.style.width = "0px";
-  document.getElementById("btn-box").style.filter = "brightness(1)";
+  btns.style.filter = "brightness(1)";
   document.body.style.backgroundColor = "darkslateblue";
-  window.removeEventListener("click", ClickOutside);
+  window.removeEventListener("mousedown", ClickOutside);
   menu.removeEventListener("transitionend", AllowClick);
 }
 
 var menu = document.getElementById("pop-menu");
+var btns = document.getElementById("btn-box");
 
 function AllowClick() {
-  window.addEventListener("click", ClickOutside);
+  window.addEventListener("mousedown", ClickOutside);
 }
 
 function ClickOutside(event) {

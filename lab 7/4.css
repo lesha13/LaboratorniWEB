@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+.point-btn {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  width: 200px;
+  margin: 10px;
+  transition: 0.25s;
+}
+
+.point-btn:hover {
+  cursor: pointer;
+}
+
+#circle {
+  background-color: white;
+  color: darkgray;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#number {
+  padding-top: 5px;
+}
+
+#choose {
+  width: 250px;
+}
+
+#choose-btn {
+  height: 35px;
+}
+
+#choose-btn:hover {
+  cursor: pointer;
+}
